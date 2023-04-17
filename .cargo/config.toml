@@ -1,0 +1,22 @@
+[alias]     # command aliases
+b = "build"
+r = "run"
+rr = "run --release"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+debug-assertions = false
+code-model = "tiny"
+debuginfo = 1
+embed-bitcode = true
+force-frame-pointers = false
+force-unwind-tables = false
+link-dead-code = false
+linker-flavor = "gcc"
+overflow-checks = true
+panic = "unwind"
+prefer-dynamic = false
+relocation-model = "static"
+strip = "symbols"
