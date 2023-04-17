@@ -123,7 +123,7 @@ impl Default for SApp {
             threads: std::thread::available_parallelism().unwrap().get(),
             header_prefix: "X-Bare-".to_owned(),
             public: "public/".to_owned(),
-            size_limit: 999_999_999
+            size_limit: 905_318_008
         }
     }
 }
